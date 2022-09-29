@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "cypress": "^10.8.0"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.1",
+    "@faker-js/faker": "^7.5.0",
+    "cypress-xpath": "^2.0.1"
   }
 }
