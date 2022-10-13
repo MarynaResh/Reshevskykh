@@ -2,6 +2,7 @@
 Comments:
 1. email: `${generateEmail}`, ->  email: generateEmail тут и так будет работать
 2. url: `https://gorest.co.in/public/v1/users/212121212`? Чего захаркоджено должен динамически передаваться
+- случайно сохранила не то немного, исправила 
 3. body - выносим в отдельную переменную 
 body:{
             name: "Maryna Krupka",
@@ -72,7 +73,7 @@ cy.request({
   });
   cy.request({
     method: 'GET',
-    url: `https://gorest.co.in/public/v1/users/212121212`,
+    url: `https://gorest.co.in/public/v1/users/${userId}`,
     headers:{
               Authorization: "Bearer 2094a1c8b71c7c8cfac71634ba43d20e51d3afc815b7c5f009c0852187e29293"
             },
